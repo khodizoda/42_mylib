@@ -1,0 +1,10 @@
+.vscode
+.DS_Store
+*.a
+*.o
+*.txt
+main*
+a.out
+a.out.dSYM
+*.gch
+*test*
