@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*   get_next_line_multiple_fd.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gkhodizo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 15:28:11 by gkhodizo          #+#    #+#             */
-/*   Updated: 2020/09/12 17:42:37 by gkhodizo         ###   ########.fr       */
+/*   Updated: 2020/09/14 16:11:36 by gkhodizo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 ** read, when the reading has been completed, or if an error has happened.
 */
 
-#include "../includes/get_next_line_bonus.h"
+#include "../includes/get_next_line.h"
 
 static char		*clean_buff(char *text)
 {
@@ -110,7 +110,7 @@ static char		*read_append(int fd, char *text, char *tmp)
 	return (text);
 }
 
-int				get_next_line_bonus(int fd, char **line)
+int				get_next_line_multiple_fd(int fd, char **line)
 {
 	int			ret;
 	char		tmp[BUFFER_SIZE + 1];

@@ -6,7 +6,7 @@
 /*   By: gkhodizo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 20:10:07 by gkhodizo          #+#    #+#             */
-/*   Updated: 2020/09/12 18:29:53 by gkhodizo         ###   ########.fr       */
+/*   Updated: 2020/09/14 16:12:42 by gkhodizo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <unistd.h>
 
 # include "get_next_line.h"
-# include "get_next_line_bonus.h"
 # include "../srcs/ft_printf/pf_includes/ft_printf.h"
 
 typedef struct		s_list
