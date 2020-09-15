@@ -6,7 +6,7 @@
 /*   By: gkhodizo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/03 15:28:55 by gkhodizo          #+#    #+#             */
-/*   Updated: 2020/09/14 16:10:03 by gkhodizo         ###   ########.fr       */
+/*   Updated: 2020/09/14 20:14:46 by gkhodizo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 # define GET_NEXT_LINE_H
 
 # include <fcntl.h>
-# include <unistd.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 # define BUFFER_SIZE 120
 # define MAX_FD 4096

@@ -6,7 +6,7 @@
 #    By: gkhodizo <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/02/19 15:57:52 by gkhodizo          #+#    #+#              #
-#    Updated: 2020/09/12 18:34:43 by gkhodizo         ###   ########.fr        #
+#    Updated: 2020/09/14 20:13:52 by gkhodizo         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,14 +39,16 @@ $(OBJ):
 
 $(FT_PRINTF):
 	make -C srcs/ft_printf/
-	cp srcs/ft_printf/libftprintf.a .
+	mv srcs/ft_printf/libftprintf.a .
 
 clean:
 	@/bin/rm -f $(OBJ)
+	@/bin/rm -f srcs/ft_printf/*.o
 	@echo Deleting object files...
 
 fclean: clean
-	@/bin/rm -rf $(LIBFT)
+	@/bin/rm -rf $(FT_PRINTF) $(LIBFT) 
+	@echo Deleting $(FT_PRINTF)...
 	@echo Deleting $(LIBFT)...
 
 re: fclean all
